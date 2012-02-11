@@ -1,0 +1,12 @@
+This project is a template to run gatling load tests from Maven with the Maven Gatling Plugin.
+
+You can run the sample simulations with :
+
+> mvn gatling:execute
+
+To run a set of simulations you have to use this command :
+
+> mvn gatling:execute -Dgatling.simulations=basic-script-example@default.txt,advanced-script-example@default.txt
+
+
+Have fun :-)

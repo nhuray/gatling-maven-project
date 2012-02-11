@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.nhuray</groupId>
+    <artifactId>gatling-maven-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.excilys.ebi.gatling</groupId>
+                <artifactId>gatling-maven-plugin</artifactId>
+                <version>1.1.0-SNAPSHOT</version>
+                <configuration>
+                    <configFile>src/main/resources/gatling.conf</configFile>
+                    <dataFolder>src/main/resources/data</dataFolder>
+                    <resultsFolder>target/gatling</resultsFolder>
+                    <requestBodiesFolder>src/main/resources/request-bodies</requestBodiesFolder>
+                    <simulationsFolder>src/main/resources/simulations</simulationsFolder>
+                    <includes>
+                        <include>*.txt</include>
+                    </includes>
+                    <excludes>
+                        <exclude>advanced-script-example@default.txt</exclude>
+                    </excludes>
+                    <noReports>true</noReports>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
