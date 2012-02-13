@@ -24,8 +24,15 @@
                     <excludes>
                         <exclude>advanced-script-example@default.txt</exclude>
                     </excludes>
-                    <noReports>true</noReports>
+<!--                     <noReports>true</noReports> -->
                 </configuration>
+                <dependencies>
+					<dependency>
+						<groupId>com.excilys.ebi.gatling.highcharts</groupId>
+						<artifactId>gatling-charts-highcharts</artifactId>
+						<version>1.1.0-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
             </plugin>
         </plugins>
     </build>
