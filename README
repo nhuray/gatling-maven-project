@@ -6,7 +6,7 @@ You can run the sample simulations with :
 
 To run a set of simulations you have to use this command :
 
-> mvn gatling:execute -Dgatling.simulations=basic-script-example@default.txt,advanced-script-example@default.txt
+> mvn gatling:execute -Dgatling.simulations=basic.BasicExampleSimulation,advanced.AdvancedExampleSimulation
 
 
 Have fun :-)

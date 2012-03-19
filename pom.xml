@@ -19,10 +19,10 @@
                     <requestBodiesFolder>src/main/resources/request-bodies</requestBodiesFolder>
                     <simulationsFolder>src/main/resources/simulations</simulationsFolder>
                     <includes>
-                        <include>*.txt</include>
+                        <include>**/*.scala</include>
                     </includes>
                     <excludes>
-                        <exclude>advanced-script-example@default.txt</exclude>
+                        <exclude>advanced/*.scala</exclude>
                     </excludes>
 <!--                     <noReports>true</noReports> -->
                 </configuration>
