@@ -4,14 +4,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.nhuray</groupId>
     <artifactId>gatling-maven-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1.1</version>
 
+    <properties>
+        <gatling.version>1.1.1</gatling.version>
+    </properties>
+    
     <build>
         <plugins>
             <plugin>
                 <groupId>com.excilys.ebi.gatling</groupId>
                 <artifactId>gatling-maven-plugin</artifactId>
-                <version>1.1.0-SNAPSHOT</version>
+                <version>${gatling.version}</version>
                 <configuration>
                     <configFile>src/main/resources/gatling.conf</configFile>
                     <dataFolder>src/main/resources/data</dataFolder>
@@ -24,15 +28,14 @@
                     <excludes>
                         <exclude>advanced/*.scala</exclude>
                     </excludes>
-<!--                     <noReports>true</noReports> -->
                 </configuration>
                 <dependencies>
-					<dependency>
-						<groupId>com.excilys.ebi.gatling.highcharts</groupId>
-						<artifactId>gatling-charts-highcharts</artifactId>
-						<version>1.1.0-SNAPSHOT</version>
-					</dependency>
-				</dependencies>
+  		    <dependency>
+		        <groupId>com.excilys.ebi.gatling.highcharts</groupId>
+		        <artifactId>gatling-charts-highcharts</artifactId>
+                        <version>${gatling.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
