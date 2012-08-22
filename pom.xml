@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.nhuray</groupId>
     <artifactId>gatling-maven-project</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.5</version>
 
     <properties>
-        <gatling.version>1.1.2</gatling.version>
+        <gatling.version>1.2.5</gatling.version>
     </properties>
 
     <repositories>
