@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.nhuray</groupId>
     <artifactId>gatling-maven-project</artifactId>
-    <version>1.2.5</version>
+    <version>1.3.4</version>
 
     <properties>
-        <gatling.version>1.2.5</gatling.version>
+        <gatling.version>1.3.4</gatling.version>
     </properties>
 
     <repositories>
@@ -45,7 +45,7 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>${gatling.version}</version>
                 <configuration>
-                    <configFile>src/main/resources/gatling.conf</configFile>
+                    <configDir>src/main/resources/gatling.conf</configDir>
                     <dataFolder>src/main/resources/data</dataFolder>
                     <resultsFolder>target/gatling</resultsFolder>
                     <requestBodiesFolder>src/main/resources/request-bodies</requestBodiesFolder>

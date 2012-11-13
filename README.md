@@ -24,7 +24,7 @@ This project provide a simple method for integrating Gatling with Maven.
 Versions
 ------------
 
-The current version of the project is based on the Gatling version : **1.2.5**.
+The current version of the project is based on the Gatling version : **1.3.4**.
 
 Usage
 -----
@@ -38,14 +38,7 @@ mvn gatling:execute
 To run a specific simulation you have to use this command :
 
 ```shell
-mvn gatling:execute -Dgatling.simulations=basic.BasicExampleSimulation
-```
-
-
-To run multiple simulations you have to use this command :
-
-```shell
-mvn gatling:execute -Dgatling.simulations=basic.BasicExampleSimulation,advanced.AdvancedExampleSimulation
+mvn gatling:execute -Dgatling.simulation=basic.BasicExampleSimulation
 ```
 
 
