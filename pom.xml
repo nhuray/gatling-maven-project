@@ -45,11 +45,11 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>${gatling.version}</version>
                 <configuration>
-                    <configDir>src/main/resources/gatling.conf</configDir>
+                    <configDir>src/main/resources</configDir>
                     <dataFolder>src/main/resources/data</dataFolder>
                     <resultsFolder>target/gatling</resultsFolder>
                     <requestBodiesFolder>src/main/resources/request-bodies</requestBodiesFolder>
-                    <simulationsFolder>src/main/resources/simulations</simulationsFolder>
+                    <simulationsFolder>src/main/scala</simulationsFolder>
                     <includes>
                         <include>**/*.scala</include>
                     </includes>
